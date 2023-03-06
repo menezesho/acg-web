@@ -25,8 +25,8 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     border-radius: 10px;
@@ -38,7 +38,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.5);
     flex-basis: 30%;
     height: 550px;
-    padding: 40px 0px 50px 0px;
+    padding: 50px 0px 60px 0px;
 }
 
 .acg-login{
@@ -48,7 +48,6 @@ body{
 }
 
 .title{
-    margin-top: 30px;
     margin-bottom: 30px;
     color: #477593;
 }
@@ -64,16 +63,25 @@ body{
     margin-top: 10px;
     background-color: #e8eef1;
     text-decoration: none;
+
+    border-bottom: 1px solid #232323;
+    background: transparent;
+    border-radius: 0;
+
 }.txb-input::placeholder{
     color: #232323;
+}.txb-input:focus{
+    border-bottom: 1.5px solid #477593;
 }
 
 .forgot-password{
-    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     text-decoration: underline;
     font-weight: bold; 
     color: #232323;
     font-size: 11pt;
+    cursor: pointer;
 }
 
 .btn-login{
@@ -97,6 +105,4 @@ body{
 
 .uemg-logo{
     max-height: 130px; 
-    margin-bottom: 30px;
 }
-
